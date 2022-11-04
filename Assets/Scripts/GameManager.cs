@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
       GenarateBucketBackgroundMaterial(bucket);
     }
 
+    //this is handling of main menu - it is enabled at start and hidden after starting a game
     GameObject.Find("StartScreen").SetActive(false);
 
   }
