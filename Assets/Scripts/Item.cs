@@ -100,7 +100,7 @@ public class Item : MonoBehaviour
     }
   }
 
-  public void SetColor(string generatedColor) {
+  public virtual void SetColor(string generatedColor) {
     color = generatedColor;
   }
 
