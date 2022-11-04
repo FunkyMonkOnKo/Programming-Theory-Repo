@@ -27,19 +27,6 @@ public class GameManager : MonoBehaviour
   public ParticleSystem explosionParticle;
   public Button restartButton;
 
-  // Start is called before the first frame update
-  void Awake()
-  {
-
-
-  }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
   public GameObject SpawnItem(float xValue)
   {
     int itemIndex = Random.Range(0, items.Count);
@@ -83,7 +70,7 @@ public class GameManager : MonoBehaviour
 
   public void StartGame()
   {
-    Debug.Log("click");
+    // this is an example of abstraction
     item1 = SpawnItem(-xSpawnPoint);
     usedColors.Add(GenarateBackgroundMaterial(item1));
     item2 = SpawnItem(0);
