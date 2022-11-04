@@ -21,8 +21,12 @@ public class GameManager : MonoBehaviour
   private float xSpawnPoint = 6;
   private float ySpawnPoint = 2.5f;
 
-  public bool gameOver;
-  public int destroyedItems = 0;
+  private bool gameOver;
+  private int destroyedItems = 0;
+  public int DestroyedItems {
+    get { return destroyedItems; }   // get method
+    set { destroyedItems = value; }  // set method
+  }
 
   public ParticleSystem explosionParticle;
   public Button restartButton;

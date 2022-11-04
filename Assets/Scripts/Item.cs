@@ -79,8 +79,8 @@ public class Item : MonoBehaviour
       var bucket = collision.GetComponent<Bucket>();
       if (bucket.color.Contains(color)) { 
         Destroy(gameObject);
-        gameManager.destroyedItems++;
-        if (gameManager.destroyedItems == 3) { gameManager.GameOver(); }
+        gameManager.DestroyedItems++;
+        if (gameManager.DestroyedItems == 3) { gameManager.GameOver(); }
       }
       else { transform.position = defaultPosition; }    
     }
